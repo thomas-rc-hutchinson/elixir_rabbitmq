@@ -1,0 +1,2 @@
+defmodule RabbitmqElixir do
+end
