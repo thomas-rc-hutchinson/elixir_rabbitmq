@@ -2,7 +2,7 @@ defmodule RabbitmqElixir.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :rabbitmq_elixir,
+    [app: :rabbitmq,
      version: "0.1.0",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
@@ -14,7 +14,7 @@ defmodule RabbitmqElixir.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [applications: [:logger], mod: {RabbitMQ, []}]
   end
 
   # Dependencies can be Hex packages:
