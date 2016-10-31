@@ -21,4 +21,4 @@ defmodule RabbitMQ.Client do
     Logger.info("Published #{payload}")
     {:noreply, channel}
   end
-  end
+end
